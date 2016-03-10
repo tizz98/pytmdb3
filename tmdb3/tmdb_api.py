@@ -508,7 +508,7 @@ class Movie(Element):
 
     @classmethod
     def nowplaying(cls, locale=None):
-        res = MovieSearchResult(Request('movie/now-playing'), locale=locale)
+        res = MovieSearchResult(Request('movie/now_playing'), locale=locale)
         res._name = 'Now Playing'
         return res
 
